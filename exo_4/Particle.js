@@ -62,23 +62,15 @@ export default class Particle {
 
   draw(ctx) {
     ctx.save();
+
     ctx.translate(this.position.x, this.position.y);
 
-    const spikes = 5;
-    const outerRadius = this.radius;
-    const innerRadius = this.radius / 2;
-    const step = Math.PI / spikes;
-
-    ctx.beginPath();
-    for (let i = 0; i < spikes * 2; i++) {
-      const radius = i % 2 === 0 ? outerRadius : innerRadius;
-      const angle = i * step;
-      ctx.lineTo(Math.cos(angle) * radius, Math.sin(angle) * radius);
-    }
-    ctx.closePath();
-
+    ctx.font = "30px 'VT323', sans-serif";
     ctx.fillStyle = "#FFD700";
-    ctx.fill();
+    ctx.textAlign = "center";
+    ctx.textBaseline = "middle";
+
+    ctx.fillText("STAR", 0, 0);
 
     ctx.restore();
   }
