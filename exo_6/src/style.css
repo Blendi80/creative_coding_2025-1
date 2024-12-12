@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "WagonBold";
+  src: url("../font/Wagon-Bold.otf") format("opentype");
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  /* background-color: greenyellow; */
+  font-family: "WagonBold", sans-serif;
+}

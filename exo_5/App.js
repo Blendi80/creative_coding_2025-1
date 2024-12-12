@@ -55,8 +55,8 @@ export default class App extends BaseApp {
       );
     }
 
-    this.ctx.drawImage(this.video.video, 0, 0, 800, 800);
-    const pixels = this.ctx.getImageData(0, 0, 800, 800).data;
+    this.ctx.drawImage(this.video.video, 0, 0, 1000, 1000);
+    const pixels = this.ctx.getImageData(0, 0, 1000, 1000).data;
 
     this.ctx.fillStyle = "black";
     this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
